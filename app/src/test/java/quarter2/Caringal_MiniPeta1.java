@@ -11,7 +11,7 @@ public class Caringal_MiniPeta1 {
         String myName = "Alzhen";
         String petName = "Snow";
         String favFood = "BurgerSteak";
-        int myAge = 17;
+        int myAge = 16;
 
         // 2. THE OUTPUT (Printing to the console)
 //        System.out.println("-TIILE ---");
