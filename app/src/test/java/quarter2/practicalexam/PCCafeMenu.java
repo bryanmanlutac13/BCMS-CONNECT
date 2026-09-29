@@ -96,8 +96,14 @@ public class PCCafeMenu {
             System.out.print("Username: ");
             username = scanner.nextLine();
 
+            // Show entered username
+            System.out.println(username);
+
             System.out.print("Password: ");
             password = scanner.nextLine();
+
+            // Show entered password
+            System.out.println(password);
 
             walletBalance = 0.00;
             pcMinutes = 0;
@@ -173,6 +179,7 @@ public class PCCafeMenu {
                         double amount = scanner.nextDouble();
                         scanner.nextLine();
 
+                        // Show entered amount
                         System.out.println(
                                 String.format("%.0f", amount)
                         );
@@ -554,10 +561,16 @@ public class PCCafeMenu {
             String inputUsername =
                     scanner.nextLine();
 
+            // Show entered username
+            System.out.println(inputUsername);
+
             System.out.print("Password: ");
 
             String inputPassword =
                     scanner.nextLine();
+
+            // Show entered password
+            System.out.println(inputPassword);
 
             if (!username.equals(inputUsername)
                     || !password.equals(inputPassword)) {
