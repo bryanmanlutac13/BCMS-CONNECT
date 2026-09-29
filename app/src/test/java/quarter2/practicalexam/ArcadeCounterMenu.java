@@ -1,4 +1,4 @@
-package Practicalexam;
+package quarter2.practicalexam;
 
 import java.util.Scanner;
 

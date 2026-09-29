@@ -1,10 +1,10 @@
-package Practicalexam;
+package quarter2.practicalexam;
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-import Practicalexam.ArcadeCounterMenu;
+import quarter2.practicalexam.ArcadeCounterMenu;
 
 public class ArcadeCounterTest {
     @Test
