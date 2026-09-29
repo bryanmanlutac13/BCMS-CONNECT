@@ -28,7 +28,45 @@ public class PCCafeMenu {
 
             System.out.print("Enter option: ");
 
-            // Input and routing will be added in Commit 3
+            int option = scanner.nextInt();
+            scanner.nextLine();
+
+            // Show simulated/user input
+            System.out.println(option);
+
+            switch (option) {
+
+                case 1:
+                    new Register().runFeature(scanner);
+                    break;
+
+                case 2:
+                    new EWallet().runFeature(scanner);
+                    break;
+
+                case 3:
+                    new PCHours().runFeature(scanner);
+                    break;
+
+                case 4:
+                    new FoodAndDrinks().runFeature(scanner);
+                    break;
+
+                case 5:
+                    new PCLogin().runFeature(scanner);
+                    break;
+
+                case 6:
+                    System.out.println();
+                    System.out.println("Thank you for using PC Café!");
+                    System.out.println("Goodbye!");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println();
+                    System.out.println("Invalid option.");
+            }
         }
     }
 
