@@ -16,6 +16,21 @@ public class FastFoodsMenu {
             System.out.print("Enter your choice: ");
 
             choice = scanner.nextInt();
+
+            if (choice == 1) {
+                System.out.println("You selected Order Burger.");
+
+            } else if (choice == 2) {
+                System.out.println("You selected Order Fries.");
+
+            } else if (choice == 3) {
+                System.out.println("Thank you for ordering!");
+
+            } else {
+                System.out.println("Invalid choice. Please try again.");
+            }
+
+            System.out.println();
         }
     }
 }
