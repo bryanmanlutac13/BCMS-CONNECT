@@ -74,6 +74,7 @@ public class ArcadeCounterMenu {
 
             System.out.println("Invalid amount.");
         }
+
     }
 
     public static void useCounter(Scanner input) {
