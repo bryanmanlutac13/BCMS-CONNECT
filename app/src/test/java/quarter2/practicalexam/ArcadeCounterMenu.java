@@ -102,4 +102,5 @@ public class ArcadeCounterMenu {
 
         System.out.println("Current counter: " + counter);
     }
+
 }
