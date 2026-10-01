@@ -15,6 +15,12 @@ public class FastFoodsMenu {
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
 
+            if (!scanner.hasNextInt()) {
+                System.out.println("Invalid input. Enter a number.");
+                scanner.nextLine();
+                continue;
+            }
+
             choice = scanner.nextInt();
 
             if (choice == 1) {
@@ -22,6 +28,12 @@ public class FastFoodsMenu {
                 System.out.println("1. Combo");
                 System.out.println("2. Solo");
                 System.out.print("Choose burger option: ");
+
+                if (!scanner.hasNextInt()) {
+                    System.out.println("Invalid burger option.");
+                    scanner.nextLine();
+                    continue;
+                }
 
                 int burgerChoice = scanner.nextInt();
 
