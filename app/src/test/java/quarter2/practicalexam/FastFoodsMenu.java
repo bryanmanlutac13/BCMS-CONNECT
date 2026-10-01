@@ -18,13 +18,32 @@ public class FastFoodsMenu {
             choice = scanner.nextInt();
 
             if (choice == 1) {
-                System.out.println("You selected Order Burger.");
+                System.out.println("\n===== BURGER OPTIONS =====");
+                System.out.println("1. Combo");
+                System.out.println("2. Solo");
+                System.out.print("Choose burger option: ");
+
+                int burgerChoice = scanner.nextInt();
+
+                if (burgerChoice == 1) {
+                    System.out.println("You ordered a Burger Combo.");
+                    System.out.println("Order confirmed!");
+
+                } else if (burgerChoice == 2) {
+                    System.out.println("You ordered a Solo Burger.");
+                    System.out.println("Order confirmed!");
+
+                } else {
+                    System.out.println("Invalid burger option.");
+                }
 
             } else if (choice == 2) {
-                System.out.println("You selected Order Fries.");
+                System.out.println("You ordered Fries.");
+                System.out.println("Order confirmed!");
 
             } else if (choice == 3) {
                 System.out.println("Thank you for ordering!");
+                System.out.println("Exiting Fast Food System...");
 
             } else {
                 System.out.println("Invalid choice. Please try again.");
