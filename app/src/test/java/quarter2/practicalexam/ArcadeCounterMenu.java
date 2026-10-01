@@ -96,6 +96,7 @@ public class ArcadeCounterMenu {
             System.out.println("Counter successfully used!");
             System.out.println("Remaining counter: " + counter);
         }
+
     }
 
     public static void checkCounter() {
