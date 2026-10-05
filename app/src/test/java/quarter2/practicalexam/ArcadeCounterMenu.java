@@ -6,9 +6,7 @@ public class ArcadeCounterMenu {
 
     static int counter = 0;
 
-    public static void main(String[] args) {
-
-        Scanner input = new Scanner(System.in);
+    public void start(Scanner input) {
 
         boolean running = true;
 
@@ -44,8 +42,6 @@ public class ArcadeCounterMenu {
                     System.out.println("Invalid choice. Please try again.");
             }
         }
-
-        input.close();
     }
 
     public static void showMenu() {
@@ -74,7 +70,6 @@ public class ArcadeCounterMenu {
 
             System.out.println("Invalid amount.");
         }
-
     }
 
     public static void useCounter(Scanner input) {
@@ -97,12 +92,10 @@ public class ArcadeCounterMenu {
             System.out.println("Counter successfully used!");
             System.out.println("Remaining counter: " + counter);
         }
-
     }
 
     public static void checkCounter() {
 
         System.out.println("Current counter: " + counter);
     }
-
 }

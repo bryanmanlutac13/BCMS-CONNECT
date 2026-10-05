@@ -4,28 +4,37 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-import quarter2.practicalexam.ArcadeCounterMenu;
+import static org.junit.Assert.assertEquals;
 
 public class ArcadeCounterTest {
+
     @Test
     public void testArcadeFlow() {
-        StringBuilder automatedInput = new StringBuilder();
-        System.out.println("--- GENERATING ARCADE TEST DATA ---");
-// Step 1: Buy tokens option
-        automatedInput.append("1\n"); // Choose Buy Tokens
-// Step 2: Test low ticket count for prize (< 500)
-        automatedInput.append("2\n"); // Choose Claim Prize
-        automatedInput.append("200\n"); // Enter 200 tickets (Expected: Keep Playing)
-// Step 3: Test high ticket count for prize (>= 500)
-        automatedInput.append("2\n"); // Choose Claim Prize
-        automatedInput.append("600\n"); // Enter 600 tickets (Expected: Teddy Bear Won)
-// Step 4: Exit system
-        automatedInput.append("3\n"); // Choose Exit
-        System.out.println("--- TEST DATA GENERATION COMPLETE ---\n");
-        ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
-        Scanner scanner = new Scanner(inputStream);
+
+        // Reset counter before testing
+        ArcadeCounterMenu.counter = 0;
+
+        // Add 10 counters
+        // Use 3 counters
+        // Check counter
+        // Exit
+        String input =
+                "1\n" +
+                        "10\n" +
+                        "2\n" +
+                        "3\n" +
+                        "3\n" +
+                        "4\n";
+
+        Scanner scanner = new Scanner(
+                new ByteArrayInputStream(input.getBytes())
+        );
 
         ArcadeCounterMenu arcadeSystem = new ArcadeCounterMenu();
+
         arcadeSystem.start(scanner);
+
+        // Expected: 10 - 3 = 7
+        assertEquals(7, ArcadeCounterMenu.counter);
     }
 }
