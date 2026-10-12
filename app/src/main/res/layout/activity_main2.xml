@@ -14,8 +14,10 @@
         android:ems="10"
         android:inputType="text"
         android:text="Name"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -24,8 +26,12 @@
         android:ems="10"
         android:inputType="text"
         android:text="Password"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="390dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
 
     <Button
         android:id="@+id/button"
@@ -33,39 +39,54 @@
         android:layout_height="81dp"
         android:backgroundTint="#4CAF50"
         android:text="Login"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="553dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="218dp"
-        android:layout_height="41dp"
+        android:layout_width="225dp"
+        android:layout_height="71dp"
         android:backgroundTint="#FFFFFF"
         android:text="Forgot Password?"
         android:textColor="#4CAF50"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="484dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="190dp"
         android:layout_height="142dp"
         android:src="@drawable/bcms_logo"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="246dp"
         android:layout_height="52dp"
-        android:layout_marginEnd="80dp"
         android:text="Barangay Cleanliness Monitoring System"
         android:textAlignment="center"
         android:textColor="#4CAF50"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
 
     <TextView
         android:id="@+id/textView4"
@@ -74,8 +95,11 @@
         android:text="Welcome Back!"
         android:textColor="#2196F3"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="221dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
 
     <TextView
         android:id="@+id/textView5"
@@ -84,16 +108,24 @@
         android:text="Please login to continue"
         android:textAlignment="center"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Remember me"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="484dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
 
     <TextView
         android:id="@+id/textView8"
@@ -102,29 +134,39 @@
         android:text="No registered account. Please contact the Barangay Office."
         android:textAlignment="center"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="679dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="209dp"
         android:layout_height="32dp"
+        android:layout_marginStart="24dp"
         android:text="Don't have an account?"
         android:textAlignment="center"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="634dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="145dp"
-        android:layout_height="38dp"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
         android:backgroundTint="#FFFFFF"
         android:text="Sign up here"
         android:textColor="#4CAF50"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="628dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
