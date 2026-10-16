@@ -13,7 +13,7 @@
         android:layout_height="749dp"
         tools:context=".MainActivity"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-71dp">
+        tools:layout_editor_absoluteY="-69dp">
 
         <ImageView
             android:id="@+id/imageView10"
