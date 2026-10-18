@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp"
+            android:background="#006329">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/bcms_logo"
+                android:scaleType="fitCenter"
+                android:contentDescription="BCMS Connect logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="My Tasks"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF">
+
+            <Button
+                android:id="@+id/tabToday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:minWidth="0dp"
+                android:minHeight="48dp"
+                android:padding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="#E8F3EB"
+                android:text="Today's Task"
+                android:textColor="#006329"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/tabAll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:minWidth="0dp"
+                android:minHeight="48dp"
+                android:padding="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="All Tasks"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:background="#FAFAFA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Today's Assigned Task"
+                        android:textColor="#174E2B"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Task ID: TSK-2026-00123"
+                        android:textColor="#555555"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Task Description"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sweep and clean the Barangay Road and surrounding area."
+                                android:textColor="#222222"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Location"
+                                android:textColor="#333333"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Purok 3, Barangay Maharlika"
+                                android:textColor="#222222"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Due Date"
+                                android:textColor="#333333"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="May 24, 2026 (Friday)"
+                                android:textColor="#222222"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingHorizontal="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="#FFFFFF"
+                    android:elevation="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Task Status"
+                        android:textColor="#174E2B"
+                        android:textStyle="bold"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:text="PENDING"
+                        android:textColor="#F5A000"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:background="#FFF9E9" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="▣  UPLOAD PHOTO EVIDENCE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#006329"
+                    android:stateListAnimator="@null" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:elevation="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Task already completed?"
+                        android:textColor="#444444"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnComplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="☑  MARK AS COMPLETED"
+                        android:textColor="#006329"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#E8F3EB"
+                        android:stateListAnimator="@null" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="6dp">
+
+            <Button
+                android:id="@+id/navDashboard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="#006329"
+                android:text="⌂\nDashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp"
+                android:gravity="center"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/navTasks"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="▤\nTasks"
+                android:textColor="#444444"
+                android:textSize="9sp"
+                android:gravity="center"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/navCamera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="▣\nCamera"
+                android:textColor="#444444"
+                android:textSize="9sp"
+                android:gravity="center"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/navAnnouncements"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="♢\nNews"
+                android:textColor="#444444"
+                android:textSize="9sp"
+                android:gravity="center"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/navProfile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="2dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="♙\nProfile"
+                android:textColor="#444444"
+                android:textSize="9sp"
+                android:gravity="center"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
