@@ -205,13 +205,13 @@
 
                     <TextView
                         android:id="@+id/txtStatus"
-                        android:layout_width="73dp"
-                        android:layout_height="30dp"
+                        android:layout_width="79dp"
+                        android:layout_height="48dp"
                         android:background="#FFF9E9"
                         android:paddingHorizontal="8dp"
                         android:paddingVertical="4dp"
                         android:text="PENDING"
-                        android:textColor="#FFEB3B"
+                        android:textColor="#333333"
                         android:textSize="12sp"
                         android:textStyle="bold" />
                 </LinearLayout>
