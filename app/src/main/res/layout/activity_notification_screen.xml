@@ -7,11 +7,109 @@
     android:layout_height="match_parent"
     tools:context=".NotificationScreen">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="129dp"
+        android:layout_height="93dp"
+        app:srcCompat="@drawable/bcms_logo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="59dp" />
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="Notifications"
+        android:textColor="#000000"
+        android:textColorLink="#070707"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mark as read"
+        android:textColor="#070707"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="324dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/imagebutton"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="323dp"
+        android:layout_height="66dp"
+        app:srcCompat="@drawable/imagebutton2"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="325dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/imagebutton3"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="326dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/imagebutton4"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="325dp"
+        android:layout_height="69dp"
+        app:srcCompat="@drawable/imagebutton6"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Unread"
+        android:textColor="#0B0A0A"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Read"
+        android:textColor="#0D0C0C"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="All"
+        android:textColor="#023C04"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="151dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
