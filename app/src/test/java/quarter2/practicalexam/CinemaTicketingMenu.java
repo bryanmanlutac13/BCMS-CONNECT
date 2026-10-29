@@ -14,10 +14,22 @@ public class CinemaTicketingMenu {
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
 
+            if (!scanner.hasNextInt()) {
+                System.out.println("Invalid input. Enter a number.");
+                scanner.nextLine();
+                continue;
+            }
+
             choice = scanner.nextInt();
 
             if (choice == 1) {
                 System.out.print("Enter your age: ");
+
+                if (!scanner.hasNextInt()) {
+                    System.out.println("Invalid age.");
+                    scanner.nextLine();
+                    continue;
+                }
 
                 int age = scanner.nextInt();
 
