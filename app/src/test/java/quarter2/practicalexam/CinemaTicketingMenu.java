@@ -17,10 +17,21 @@ public class CinemaTicketingMenu {
             choice = scanner.nextInt();
 
             if (choice == 1) {
-                System.out.println("Buy Ticket selected.");
+                System.out.print("Enter your age: ");
+
+                int age = scanner.nextInt();
+
+                if (age >= 18) {
+                    System.out.println("Access Granted.");
+                    System.out.println("Ticket Printed!");
+                } else {
+                    System.out.println("Access Denied.");
+                    System.out.println("You must be 18 or older.");
+                }
 
             } else if (choice == 2) {
-                System.out.println("Buy Snacks selected.");
+                System.out.println("Snacks purchased!");
+                System.out.println("Enjoy your snacks!");
 
             } else if (choice == 3) {
                 System.out.println("Thank you for visiting!");
