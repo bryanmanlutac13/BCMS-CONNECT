@@ -16,6 +16,20 @@ public class CinemaTicketingMenu {
 
             choice = scanner.nextInt();
 
+            if (choice == 1) {
+                System.out.println("Buy Ticket selected.");
+
+            } else if (choice == 2) {
+                System.out.println("Buy Snacks selected.");
+
+            } else if (choice == 3) {
+                System.out.println("Thank you for visiting!");
+                System.out.println("Exiting Cinema System...");
+
+            } else {
+                System.out.println("Invalid choice. Please try again.");
+            }
+
             System.out.println();
         }
     }
