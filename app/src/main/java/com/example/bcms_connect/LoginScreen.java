@@ -8,6 +8,7 @@ import android.text.InputType;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -52,6 +53,19 @@ public class LoginScreen extends AppCompatActivity {
         Button buttonForgotPassword = findViewById(R.id.button2);
         Button buttonSignUp = findViewById(R.id.button4);
         CheckBox checkBoxRemember = findViewById(R.id.checkBox);
+        ImageView btnTogglePassword = findViewById(R.id.btnTogglePassword);
+
+        // Password visibility toggle
+        if (btnTogglePassword != null) {
+            btnTogglePassword.setOnClickListener(v -> {
+                if (editTextPassword.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
+                    editTextPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                } else {
+                    editTextPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+                editTextPassword.setSelection(editTextPassword.getText().length());
+            });
+        }
 
         // Login Button action
         buttonLogin.setOnClickListener(v -> {
@@ -134,21 +148,21 @@ public class LoginScreen extends AppCompatActivity {
                         String fName = inputFirstName.getText().toString().trim();
                         String lName = inputLastName.getText().toString().trim();
                         String uName = inputRegUsername.getText().toString().trim();
-                        String email = inputEmail.getText().toString().trim();
+                        String userEmail = inputEmail.getText().toString().trim();
                         String pWord = inputRegPassword.getText().toString().trim();
 
                         if (fName.isEmpty() || lName.isEmpty() || uName.isEmpty() || pWord.isEmpty()) {
                             Toast.makeText(LoginScreen.this, "First Name, Last Name, Username, and Password are required!", Toast.LENGTH_SHORT).show();
                         } else {
-                            if (email.isEmpty()) {
-                                email = uName.toLowerCase() + "@gmail.com";
+                            if (userEmail.isEmpty()) {
+                                userEmail = uName.toLowerCase() + "@gmail.com";
                             }
                             SharedPreferences prefs = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = prefs.edit();
                             editor.putString(KEY_FIRST_NAME, fName);
                             editor.putString(KEY_LAST_NAME, lName);
                             editor.putString(KEY_USERNAME, uName);
-                            editor.putString(KEY_EMAIL, email);
+                            editor.putString(KEY_EMAIL, userEmail);
                             editor.putString(KEY_PASSWORD, pWord);
                             editor.putString(KEY_CONTACT_NUMBER, "0917 123 4567");
                             editor.putString(KEY_ADDRESS, "Purok 3, Barangay San Isidro");

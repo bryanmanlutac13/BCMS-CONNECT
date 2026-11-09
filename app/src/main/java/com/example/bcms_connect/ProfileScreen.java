@@ -186,6 +186,10 @@ public class ProfileScreen extends AppCompatActivity {
                 finish();
             });
         }
+
+        if (navProfile != null) {
+            navProfile.setOnClickListener(v -> loadUserProfile());
+        }
     }
 
     private void showEditProfileDialog() {

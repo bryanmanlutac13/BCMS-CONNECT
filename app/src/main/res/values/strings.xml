@@ -25,4 +25,21 @@
     <string name="cd_edit_profile">Edit Profile</string>
     <string name="cd_profile_picture">Profile Picture</string>
     <string name="cd_chevron">Chevron</string>
+
+    <string name="login_subtitle">Barangay Cleanliness\nMonitoring System</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="login_instruction">Please login to continue</string>
+    <string name="username_label">Username</string>
+    <string name="username_hint">Enter your username</string>
+    <string name="password_label">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="sign_up_here">Sign up here</string>
+    <string name="no_registered_account">No registered account.</string>
+    <string name="contact_barangay">Please contact\nthe Barangay Office.</string>
+    <string name="cd_toggle_password_visibility">Toggle Password Visibility</string>
+    <string name="cd_decorative_landscape">Decorative Landscape</string>
 </resources>
