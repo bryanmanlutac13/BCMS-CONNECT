@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">BCMS-CONNECT</string>
+    <string name="profile_title">Profile</string>
+    <string name="profile_name">Juan Dela Cruz</string>
+    <string name="profile_role">Resident</string>
+    <string name="profile_address">Purok 3, Barangay San Isidro</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="contact_number_label">Contact Number</string>
+    <string name="contact_number_val">0917 123 4567</string>
+    <string name="email_label">Email</string>
+    <string name="email_val">juandelacruz@gmail.com</string>
+    <string name="address_label">Address</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="privacy_security">Privacy &amp; Security</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="logout">LOGOUT</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_task">Task</string>
+    <string name="nav_photo">Photo</string>
+    <string name="nav_announcement">Announcement</string>
+    <string name="nav_profile">Profile</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_edit_profile">Edit Profile</string>
+    <string name="cd_profile_picture">Profile Picture</string>
+    <string name="cd_chevron">Chevron</string>
 </resources>

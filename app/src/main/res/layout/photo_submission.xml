@@ -9,7 +9,7 @@
         android:id="@+id/imageView"
         android:layout_width="526dp"
         android:layout_height="469dp"
-        app:srcCompat="@drawable/img"
+        app:srcCompat="@drawable/img_1"
         tools:layout_editor_absoluteX="-32dp"
         tools:layout_editor_absoluteY="-179dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
