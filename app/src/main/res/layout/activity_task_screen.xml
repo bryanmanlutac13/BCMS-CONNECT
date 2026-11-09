@@ -34,7 +34,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="My Tasks"
+                android:text="Photo submission"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -47,7 +47,7 @@
             android:orientation="horizontal"
             android:background="#FFFFFF">
 
-            <Button
+                <Button
                 android:id="@+id/tabToday"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -232,13 +232,13 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="96dp"
                     android:layout_marginTop="8dp"
-                    android:padding="8dp"
+                    android:background="#FFFFFF"
+                    android:elevation="1dp"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:background="#FFFFFF"
-                    android:elevation="1dp">
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -252,14 +252,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginTop="4dp"
+                        android:backgroundTint="#E8F3EB"
                         android:insetTop="0dp"
                         android:insetBottom="0dp"
+                        android:stateListAnimator="@null"
                         android:text="☑  MARK AS COMPLETED"
                         android:textColor="#006329"
                         android:textSize="12sp"
-                        android:textStyle="bold"
-                        android:backgroundTint="#E8F3EB"
-                        android:stateListAnimator="@null" />
+                        android:textStyle="bold" />
+
                 </LinearLayout>
 
             </LinearLayout>

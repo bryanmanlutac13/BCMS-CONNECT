@@ -9,7 +9,7 @@
 
     <!-- FINAL OUTPUT -->
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -94,11 +94,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="2dp"
                 android:background="@android:color/transparent"
+                android:contentDescription="Warning"
+                android:padding="2dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/img_5"
-                android:contentDescription="Warning" />
+                android:src="@drawable/img_5" />
 
             <ImageButton
                 android:id="@+id/imageButton19"
@@ -136,11 +136,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="2dp"
                 android:background="@android:color/transparent"
+                android:contentDescription="Logout"
+                android:padding="2dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/img_6"
-                android:contentDescription="Logout" />
+                android:src="@drawable/img_6" />
 
             <View
                 android:layout_width="0dp"
