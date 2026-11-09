@@ -24,15 +24,9 @@
         <activity
             android:name=".DashBoard"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".photosubmission"
+            android:name=".WarningScreen"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -54,13 +48,7 @@
         <activity
             android:name=".ProfileScreen"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
