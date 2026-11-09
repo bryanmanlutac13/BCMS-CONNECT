@@ -48,17 +48,6 @@
                 android:contentDescription="Home" />
 
             <ImageButton
-                android:id="@+id/imageButton15"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="2dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/img_2"
-                android:contentDescription="Task" />
-
-            <ImageButton
                 android:id="@+id/imageButton16"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -68,6 +57,17 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/img_3"
                 android:contentDescription="Photo submission" />
+
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Profile"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_7" />
         </LinearLayout>
 
         <!-- SECOND ROW: ANNOUNCEMENT, WARNING, NOTIFICATION -->
@@ -119,17 +119,6 @@
             android:layout_weight="1.5"
             android:orientation="horizontal"
             android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/imageButton20"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:padding="2dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/img_7"
-                android:contentDescription="Profile" />
 
             <ImageButton
                 android:id="@+id/imageButton21"
