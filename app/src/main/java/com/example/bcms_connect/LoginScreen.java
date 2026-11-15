@@ -19,6 +19,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Objects;
+
 public class LoginScreen extends AppCompatActivity {
 
     public static final String PREF_NAME = "BCMS_UserPrefs";
@@ -58,7 +60,8 @@ public class LoginScreen extends AppCompatActivity {
         // Password visibility toggle
         if (btnTogglePassword != null) {
             btnTogglePassword.setOnClickListener(v -> {
-                if (editTextPassword.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
+                boolean isPasswordHidden = editTextPassword.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                if (isPasswordHidden) {
                     editTextPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
                 } else {
                     editTextPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
@@ -78,13 +81,13 @@ public class LoginScreen extends AppCompatActivity {
             String regPassword = prefs.getString(KEY_PASSWORD, "12345");
             String firstName = prefs.getString(KEY_FIRST_NAME, "Juan");
 
-            if (username.isEmpty() || password.isEmpty() || username.equals("Name") || password.equals("Password")) {
+            if (username.isEmpty() || password.isEmpty() || Objects.equals(username, "Name") || Objects.equals(password, "Password")) {
                 new AlertDialog.Builder(LoginScreen.this)
                         .setTitle("Login Error")
                         .setMessage("Please enter a valid username and password.")
                         .setPositiveButton("OK", null)
                         .show();
-            } else if (username.equalsIgnoreCase(regUsername) && password.equals(regPassword)) {
+            } else if (username.equalsIgnoreCase(regUsername) && Objects.equals(password, regPassword)) {
                 // Save session state
                 prefs.edit().putBoolean(KEY_IS_LOGGED_IN, true).apply();
 
@@ -148,21 +151,19 @@ public class LoginScreen extends AppCompatActivity {
                         String fName = inputFirstName.getText().toString().trim();
                         String lName = inputLastName.getText().toString().trim();
                         String uName = inputRegUsername.getText().toString().trim();
-                        String userEmail = inputEmail.getText().toString().trim();
+                        String enteredEmail = inputEmail.getText().toString().trim();
                         String pWord = inputRegPassword.getText().toString().trim();
 
                         if (fName.isEmpty() || lName.isEmpty() || uName.isEmpty() || pWord.isEmpty()) {
                             Toast.makeText(LoginScreen.this, "First Name, Last Name, Username, and Password are required!", Toast.LENGTH_SHORT).show();
                         } else {
-                            if (userEmail.isEmpty()) {
-                                userEmail = uName.toLowerCase() + "@gmail.com";
-                            }
+                            String finalEmail = enteredEmail.isEmpty() ? uName.toLowerCase() + "@gmail.com" : enteredEmail;
                             SharedPreferences prefs = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = prefs.edit();
                             editor.putString(KEY_FIRST_NAME, fName);
                             editor.putString(KEY_LAST_NAME, lName);
                             editor.putString(KEY_USERNAME, uName);
-                            editor.putString(KEY_EMAIL, userEmail);
+                            editor.putString(KEY_EMAIL, finalEmail);
                             editor.putString(KEY_PASSWORD, pWord);
                             editor.putString(KEY_CONTACT_NUMBER, "0917 123 4567");
                             editor.putString(KEY_ADDRESS, "Purok 3, Barangay San Isidro");
