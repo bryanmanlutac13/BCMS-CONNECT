@@ -119,9 +119,10 @@
                             android:background="@null"
                             android:hint="@string/username_hint"
                             android:inputType="text"
+                            android:minHeight="48dp"
                             android:padding="0dp"
                             android:textColor="#1E293B"
-                            android:textColorHint="#94A3B8"
+                            android:textColorHint="#64748B"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -178,21 +179,23 @@
                             android:background="@null"
                             android:hint="@string/password_hint"
                             android:inputType="textPassword"
+                            android:minHeight="48dp"
                             android:padding="0dp"
                             android:textColor="#1E293B"
-                            android:textColorHint="#94A3B8"
+                            android:textColorHint="#64748B"
                             android:textSize="14sp" />
                     </LinearLayout>
 
                     <ImageView
                         android:id="@+id/btnTogglePassword"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
                         android:layout_marginStart="8dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:clickable="true"
                         android:contentDescription="@string/cd_toggle_password_visibility"
                         android:focusable="true"
+                        android:padding="12dp"
                         android:src="@drawable/ic_eye"
                         app:tint="#64748B" />
                 </LinearLayout>
@@ -211,6 +214,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:layout_toStartOf="@id/button2"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
                     android:text="@string/remember_me"
                     android:textColor="#334155"
                     android:textSize="13sp"
@@ -225,8 +230,8 @@
                     android:background="@android:color/transparent"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:minWidth="0dp"
-                    android:minHeight="0dp"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
                     android:padding="0dp"
                     android:stateListAnimator="@null"
                     android:text="@string/forgot_password"
@@ -243,6 +248,7 @@
                 android:layout_marginTop="14dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+                android:minHeight="48dp"
                 android:stateListAnimator="@null"
                 android:text="@string/login_btn"
                 android:textColor="#FFFFFF"
@@ -278,8 +284,8 @@
                     android:background="@android:color/transparent"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:minWidth="0dp"
-                    android:minHeight="0dp"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
                     android:padding="0dp"
                     android:stateListAnimator="@null"
                     android:text="@string/sign_up_here"
